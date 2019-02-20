@@ -1,0 +1,122 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Mamun | Project_info
+{% endblock title %}
+
+{% block body %}
+
+    <!-- project_info_part start -->
+    <section class="container_fluid project_info_part">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="project_header">
+                            <h1>JDS Labs</h1>
+                            <h3>JDS Labs</h3>
+                            <a id="toggle_icon" class="toggle_icon">
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                        <div id="project_info">
+                            <div class="project_info_section">
+                                <p class="project_info_label">Year</p>
+                                <p class="project_info_description">2018</p>
+                            </div>
+                            <div class="project_info_section">
+                                <p class="project_info_label">Category</p>
+                                <p class="project_info_description">client work | portfolio work</p>
+                            </div>
+                            <div class="project_info_section">
+                                <p class="project_info_label">Technologies</p>
+                                <p class="project_info_description">Bootstrap 4, Django 2.1, HTML 5, css 3</p>
+                            </div>
+                            <div class="project_info_section">
+                                <p class="project_info_label">Description</p>
+                                <p class="project_info_description">Frontend Design <br> Backend Development</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="clr"></div>
+                </div>
+                <div class="col-md-9">
+                    <a href="#">
+                        <div class="project_img" style="background-image: url('{% static 'images/blueshift-thumb.jpg' %}')">
+                            <p style="background: rgba(181, 156, 128, 0.8);">Live Preview</p>
+                        </div>
+                    </a>
+                    <p class="project_description">With some fantastic branding and design from Cork-based studio Hurrah Hurrah I helped OMP Architects build a responsive, fast and flexible portfolio website for their extensive list of projects.</p>
+                    
+                    <br>
+                    <br>
+                    <div id="comments">
+                        <h5>Comments</h5>
+                        <div class="main_comment">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Sabbir</h4>
+                                    <p class="pub_date">03 February 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a class="replay-comment" href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="replay_comment offset-1 mb-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Mamun <span style="background: rgb(181, 156, 128)">author</span></h4>
+                                    <p class="pub_date">03 February 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_comment">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Sabbir</h4>
+                                    <p class="pub_date">03 February 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a class="replay-comment" href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment_form">
+                           <p>Leave A Comment</p><br>
+                            <form action="" method="post">
+                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="email" required>
+                                <textarea name="" placeholder="leave your comments here..." required></textarea>
+                                <input type="submit" value="SUBMIT" class="comment_submit" style="background: rgb(159, 128, 93);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project_info_part end -->
+{% endblock body %}

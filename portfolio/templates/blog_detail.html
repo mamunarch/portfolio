@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block title %}
+    Mamun | Blog detail
+{% endblock title %}
+
+{% block body %}
+
+    <!-- blog_part start -->
+    <section class="container-fluid blog_part blog_detail mt-5">
+        <div class="container">
+            <div class="row single_post">                
+                <div class="offset-md-1 col-sm-10 blog_post mb-0 pb-0">
+                    <h1 class="blog_title">Ember Ajax and Ember Simple Auth</h1>
+                    <p class="post_info">Nov 5, 2018  —</p><br>
+                    <div class="blog_img" style="background-image: url('{% static 'images/blog_img_1.jpg' %}')"></div>
+                    <br>
+                    <p class="post">It can be tricky to properly configure ember-ajax to play nicely with ember-simple-auth. You will need to manually configure a service to mimic the authorisation functionality you get for free when using Ember Simple Auth with Ember Data. This post will show you how to get up and running properly.
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur reprehenderit quas doloribus soluta totam pariatur molestias quidem, tempora, numquam labore, eius fugit velit! Doloribus, non, repellat? Sint, ratione enim tempore veniam alias. Praesentium assumenda magnam consequatur atque fugit, delectus ullam quasi. Soluta rem optio nisi natus, consequuntur atque harum, autem quasi, et maiores blanditiis doloribus modi quo odio accusamus numquam sint veniam accusantium sunt incidunt nostrum iure quia dignissimos quibusdam quidem! Delectus dolor dignissimos commodi rerum repellendus maxime ad debitis necessitatibus sunt atque at sequi, odio numquam mollitia unde aperiam, ex rem. Aut aliquid esse itaque, vitae expedita, voluptatem doloremque.
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque dolorum sed, consectetur quos molestias natus facilis ducimus voluptas unde inventore, placeat perspiciatis veniam aut voluptate iure nulla quod expedita nisi! Repudiandae deserunt possimus tempore consequuntur. Provident dicta illo placeat quidem molestiae quis alias qui, nemo praesentium, vitae culpa distinctio totam.
+                    
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque est voluptas dolorum eius labore libero nisi, laboriosam blanditiis saepe possimus! Ad repellat quisquam tempora sapiente unde? Vero in ducimus numquam!
+                    </p>
+                    <br><br>
+                    <p class="category_tag"><a href="#">Web Development</a> | <a href="#">PHP</a></p>
+                   <br>
+                   <br>
+                   <br>
+                    <div id="comments">
+                        <h5>Comments</h5>
+                        <div class="main_comment">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Sabbir</h4>
+                                    <p class="pub_date">03 February, 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a class="replay-comment" href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="replay_comment offset-1 mb-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Mamun <span style="background: rgb(181, 156, 128)">author</span></h4>
+                                    <p class="pub_date">03 February 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_comment">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="profile_pic">
+                                        <img src="{% static 'images/human.jpg' %}" alt="">
+                                    </div>
+                                    <h4 class="posted_by">Sabbir</h4>
+                                    <p class="pub_date">03 February 2019</p>
+                                    <div class="clr"></div>
+                                    <p class="comment_post">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem dolorem animi natus doloremque labore velit obcaecati reiciendis. Saepe perspiciatis non libero quos magnam, sapiente ducimus commodi alias voluptatem veritatis tenetur optio sed soluta cupiditate deleniti, cumque molestias eligendi officiis obcaecati molestiae ex et. Autem iure, illo enim amet asperiores!</p>
+                                    <a class="replay-comment" href="#">
+                                        <i class="fa fa-reply-all" aria-hidden="true"></i> Reply
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="comment_form">
+                           <p>Leave A Comment</p><br>
+                            <form action="" method="post">
+                                <input type="text" placeholder="Name" required>
+                                <input type="text" placeholder="email" required>
+                                <textarea name="" placeholder="leave your comments here..." required></textarea>
+                                <input type="submit" value="SUBMIT" class="comment_submit" style="background: rgb(159, 128, 93);">
+                            </form>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <!-- blog_part end -->
+    
+{% endblock body %}
+
